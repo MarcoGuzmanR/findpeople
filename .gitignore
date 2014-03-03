@@ -14,3 +14,9 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+config/database.local.yml
+.rspec
+.DS_Store
+.ruby-version
+.ruby-gemset
