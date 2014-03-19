@@ -1,7 +1,11 @@
-%nav#header-layout
+%nav
   #header-container
     %h3.title Find People
     %h3.owner Marco Guzman
+    %form.navbar-form.navbar-left{role: "search"}
+      .form-group
+        %input.form-control{placeholder: "Search", type: "text"}/
+      %button.btn.btn-default{type: "submit"} Submit
 -# %nav.navbar.navbar-default{role: "navigation"}
 -#   .container-fluid
 -#     / Brand and toggle get grouped for better mobile display

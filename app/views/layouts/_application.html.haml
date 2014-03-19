@@ -2,8 +2,10 @@
 %html
   = render 'layouts/head'
   %body
-    = yield :header
-    = yield :container
+    #header-layout
+      = yield :header
+    #body-layout
+      = yield :container
     = yield :footer
     -# = javascript_include_tag 'shared'
     = yield :footer_scripts
