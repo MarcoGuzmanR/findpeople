@@ -6,6 +6,7 @@
       = yield :header
     #body-layout.container
       = yield :container
-    = yield :footer
+    #footer-layout
+      = yield :footer
     -# = javascript_include_tag 'shared'
     = yield :footer_scripts

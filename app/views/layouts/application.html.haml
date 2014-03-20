@@ -3,16 +3,14 @@
   = yield :custom_head_scripts
 
 = content_for :header do
-  = stylesheet_link_tag "layout/header"
   = render 'layouts/header'
   -# = render 'layouts/flash_messages'
 
 = content_for :container do
-  = stylesheet_link_tag "layout/application"
   = yield
 
 = content_for :footer do
-  -# = render 'layouts/footer'
+  = render 'layouts/footer'
 
 = content_for :footer_scripts do
   = javascript_include_tag "application"
