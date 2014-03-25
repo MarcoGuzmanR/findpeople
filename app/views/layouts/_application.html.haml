@@ -1,0 +1,12 @@
+!!!
+%html
+  = render 'layouts/head'
+  %body
+    #header-layout
+      = yield :header
+    #body-layout.container
+      = yield :container
+    #footer-layout
+      = yield :footer
+    -# = javascript_include_tag 'shared'
+    = yield :footer_scripts

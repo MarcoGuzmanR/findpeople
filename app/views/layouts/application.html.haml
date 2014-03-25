@@ -1,9 +1,19 @@
-!!!
-%html
-  %head
-    %title Findpeople
-    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
-    = javascript_include_tag "application", "data-turbolinks-track" => true
-    = csrf_meta_tags
-  %body
-    = yield
+= content_for :head_scripts do
+  = stylesheet_link_tag "application"
+  = yield :custom_head_scripts
+
+= content_for :header do
+  = render 'layouts/header'
+  -# = render 'layouts/flash_messages'
+
+= content_for :container do
+  = yield
+
+= content_for :footer do
+  = render 'layouts/footer'
+
+= content_for :footer_scripts do
+  = javascript_include_tag "application"
+  = yield :custom_footer_scripts
+
+= render 'layouts/application'
